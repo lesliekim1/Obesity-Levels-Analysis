@@ -1,4 +1,4 @@
-# Analysis: Obesity Levels and Associated Factors
+# Data Analysis
 
 This file contains the core statistical analysis performed on the dataset to examine relationships between obesity levels and various behavioral and demographic variables.
 
@@ -9,11 +9,16 @@ This file contains the core statistical analysis performed on the dataset to exa
 - The dataset was sorted by `family_history_with_overweight` and `Gender`.
 - Univariate analysis of `Age` was performed with plots to inspect normality.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0bb2db81-d8a3-4656-aa26-52f88f3da503" width="500"/>
+</p>
+
 **Key Observations**:
 - Normal distribution observed in females without a family history of obesity.
 - Right-skewed distribution in males with a family history of obesity.
 - Individuals with a family history of obesity tend to be over 20 years old.
 - Females in this group had a higher maximum age compared to others.
+
 
 ## 2. Correlation Analysis
 **Goal**: Determine if there is a relationship between obesity levels and time using technological devices (`TUE`).
@@ -21,6 +26,10 @@ This file contains the core statistical analysis performed on the dataset to exa
 **Steps**:
 - Created a numeric variable `lvl` representing obesity categories.
 - Conducted a Pearson correlation between `lvl` and `TUE`.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5e9cdec4-703e-4ff9-8c94-867828d55ffa" width="550"/>
+</p>
 
 **Results**:
 - **Pearson correlation coefficient**: `-0.03435`
@@ -30,6 +39,7 @@ This file contains the core statistical analysis performed on the dataset to exa
 - The correlation is weakly negative and not statistically significant.
 - The null hypothesis was not rejected (p > 0.05), indicating no strong relationship between technology usage and obesity level.
 
+
 ## 3. Regression Analysis
 **Goal**: Examine whether frequent consumption of high-calorie food (`FAVC`) predicts higher obesity levels.
 
@@ -38,6 +48,14 @@ This file contains the core statistical analysis performed on the dataset to exa
   - `lvl` for obesity level (numeric: 0 to 6)
   - `freq` for frequency of high-calorie food intake (`yes` = 1, `no` = 0)
 - Performed a linear regression of `lvl` on `freq`.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/97a4f1de-4b8b-4806-ad81-dddac478dbbc" width="450"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3168be9e-a6a7-4c9a-8a65-8f07f651d092" width="600"/>
+</p>
 
 **Results**:
 - **P-value**: `0.0001` (significant at α = 0.05)
@@ -51,6 +69,7 @@ This file contains the core statistical analysis performed on the dataset to exa
 **Residual Analysis**:
 - A univariate analysis of the residuals was conducted to assess normality and model assumptions.
 
+
 ## Summary
 
 | Analysis Type        | Variable(s) Analyzed                 | Key Finding                                                      |
@@ -59,9 +78,7 @@ This file contains the core statistical analysis performed on the dataset to exa
 | Correlation          | Obesity Level vs. Tech Usage (TUE)   | Weak, statistically insignificant correlation.                   |
 | Regression           | Obesity Level vs. High-Calorie Food  | Statistically significant but weak predictive relationship.       |
 
----
 
 ## Notes
 - Additional analysis could be done using more variables from the dataset. 
 - Future work may include logistic regression or machine learning to explore patterns further.
-
