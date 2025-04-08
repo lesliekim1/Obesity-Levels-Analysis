@@ -30,6 +30,8 @@ This SAS project analyzes a dataset on obesity levels collected from individuals
    - A regression model analyzes the relationship between `lvl` and `freq`.
    - Residual analysis is performed to assess model fit.
 
+For full results, statistical outputs, and interpretations, see the [ANALYSIS.md](./ANALYSIS.md) file.
+
 ## How to Run
 1. **Install SAS** or use SAS OnDemand for Academics.
 2. **Download the dataset** from the UCI Machine Learning Repository and place the CSV file in an accessible directory.
