@@ -35,7 +35,7 @@ This file contains the core statistical analysis performed on the dataset to exa
 
 **Steps**:
 - Created two new variables:
-  - `lvl` for obesity level (numeric)
+  - `lvl` for obesity level (numeric: 0 to 6)
   - `freq` for frequency of high-calorie food intake (`yes` = 1, `no` = 0)
 - Performed a linear regression of `lvl` on `freq`.
 
