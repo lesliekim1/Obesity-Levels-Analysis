@@ -1,6 +1,6 @@
 /* Import the dataset */
 proc import out = WORK.obesity
-    /* datafile = directory */
+    /* datafile = ____ */
     dbms = csv replace;
     getnames = yes;
 run;
